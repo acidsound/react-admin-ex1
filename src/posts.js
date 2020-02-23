@@ -13,8 +13,11 @@ export const PostList = props => (
     </List>
 );
 
+const PostTitle = ({ record }) =>
+    <span>Post {record ? `${record.title}` : ''}</span>;
+
 export const PostEdit = props => (
-    <Edit {...props}>
+    <Edit title={<PostTitle />} {...props}>
         <SimpleForm>
             <ReferenceInput source="userId" reference="users">
                 <SelectInput optionText="name" />
