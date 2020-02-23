@@ -1,5 +1,4 @@
 import React from 'react';
-import ra from 'react-admin';
 import { List, Datagrid, UrlField, TextField, EmailField } from 'react-admin';
 
 export const UserList = props => (
